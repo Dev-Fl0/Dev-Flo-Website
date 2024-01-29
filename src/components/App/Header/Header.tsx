@@ -7,10 +7,10 @@ import ContactLink from '../Contact/ContactLink';
 
 export default function Header() {
   return (
-    <div className="header max-w-6x1 m-auto sm:justify-between  items-center gap-32 flex flex-raw min-h-96">
+    <div className="header w-f m-auto sm:justify-between  items-center gap-32 flex flex-raw min-h-96">
       <div className="header-div flex flex-rw gap-20 items-center justify-center">
-        <div className="header-div flex flex-col gap-2 w-full items-start justify-self-end">
-          <p className="header-hey font-bold">Hey there! I&apos;m -</p>
+        <div className="header-div flex flex-col gap-2 w-full items-start justify-self-end text-5xl">
+          <p className="header-hey font-bold text-3xl">Hey there! I&apos;m -</p>
           <h1 className="header-title font-bold text-5xl">Florian WAUTHIER</h1>
           <p className=" text-secondary-50">Web & mobile web developer</p>
           <ContactLink />

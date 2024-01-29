@@ -5,7 +5,7 @@ import logo from '../../../assets/images/Dev-Fl0-logo.ico';
 
 export default function Navbar() {
   return (
-    <div className="navbar items-center md:flex py-4 px-4">
+    <div className="navbar items-center py-4 px-4">
       <ul className="navbar-list text-primary-50 flex items-baseline gap-6">
         <img src={logo} alt="Dev-Fl0-logo" className=" w-6 h-6 mr-auto" />
         <li className="navbar-list__item hidden sm:block">

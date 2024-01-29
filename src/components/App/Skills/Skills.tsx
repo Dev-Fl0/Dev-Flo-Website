@@ -6,7 +6,13 @@ import './Skills.scss';
 export default function Skills() {
   const [isActive, setIsActive] = useState(false);
 
-  const skillRef = useRef<HTMLUListElement | null>(null);
+  const skillRef =
+    useRef<
+      DetailedHTMLProps<
+        React.HTMLAttributes<HTMLUListElement>,
+        HTMLUListElement
+      >
+    >(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {

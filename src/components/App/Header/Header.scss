@@ -1,0 +1,9 @@
+@use '../../../styles/variables' as v;
+
+
+.header-hey,
+.header-title {
+  background: v.$linearPrimaryAccent;
+  background-clip: text;
+  color: transparent;
+}

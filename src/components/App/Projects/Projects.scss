@@ -1,0 +1,31 @@
+@use '../../../styles/variables' as v;
+
+.project-link {
+  background: v.$linearPrimaryAccent;
+  background-clip: text;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.project-link-active {
+  background: v.$linearPrimaryAccent;
+  background-clip: text;
+  opacity: 1;
+  transform: translatex(0);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.skill-name {
+  // background: v.$linearPrimarySecondary;
+  // background-clip: text;
+
+  color: transparent;
+}
+
+.projects {
+  img {
+    max-height: 16rem;
+    // min-height: 20rem;
+  }
+}

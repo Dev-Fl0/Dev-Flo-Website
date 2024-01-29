@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+$gutter: 1.6rem;
+
+$linearPrimarySecondary: linear-gradient(to right, #89d1eb, #1b2e98);
+$linearPrimaryAccent: linear-gradient(to right, #89d1eb, #594de0);
+$linearSecondaryAccent: linear-gradient(to right, #1b2e98, #594de0);
+$radialPrimarySecondary: radial-gradient(to right, #89d1eb, #1b2e98);
+$radialPrimaryAccent: radial-gradient(to right, #89d1eb, #594de0);
+$radialSecondaryAccent: radial-gradient(to right, #1b2e98, #594de0);
+
+$themes: (
+  light: (
+    text: #041016,
+    background: #f2fafd,
+    primary: #145c76,
+    secondary: #677ae4,
+    accent: #2c1fb2,
+  ),
+  dark: (
+    text: #e9f5fb,
+    background: #020a0d,
+    primary: #89d1eb,
+    secondary: #1b2e98,
+    accent: #594de0,
+  ),
+);

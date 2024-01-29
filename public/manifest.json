@@ -1,0 +1,14 @@
+{
+  "short_name": "Dev-Fl0",
+  "name": "portfolio Dev-Fl0",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

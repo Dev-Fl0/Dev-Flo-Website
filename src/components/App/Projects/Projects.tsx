@@ -11,6 +11,9 @@ export default function Projects() {
   const cardRef = useRef<HTMLAnchorElement | null>(null);
 
   useEffect(() => {
+    if (cardRef.current == null) {
+      return;
+    }
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         setIsActive(true);

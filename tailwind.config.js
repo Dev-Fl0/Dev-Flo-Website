@@ -86,17 +86,8 @@ export default {
           950: '#050416',
         },
       },
-      theme: {
-        colors: {
-          text: 'var(--text)',
-          background: 'var(--background)',
-          primary: 'var(--primary)',
-          secondary: 'var(--secondary)',
-          accent: 'var(--accent)',
-        },
-      },
     },
   },
-  // eslint-disable-next-line global-require
-  plugins: [require('flowbite/plugin')],
+
+  plugins: [],
 };

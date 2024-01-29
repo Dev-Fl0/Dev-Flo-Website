@@ -67,7 +67,7 @@ export default function Projects() {
       >
         Projects
       </h2>
-      <div className="lg:flex-col sm:flex-raw flex flex-wrap justify-center gap-8">
+      <div className="  flex flex-wrap sm:flex-col lg:flex-row justify-center gap-8">
         {items}
       </div>
     </div>

@@ -1,18 +1,18 @@
 export default {
   projects: [
     {
-      nom: "Immo'pros",
+      nom: "Immo'Pros",
       url: 'https://immopros-app.com/',
       image: "./images/Immo'pros.png",
       description:
-        'Application de prospection immobilière (Pour se connecter Identifiant: Mdp: guest@guest.com Guest@2024)',
+        'Real estate prospecting application (Test the app → Identifier: guest@guest.com Mdp:  Guest@2024)',
       languages: ['React', 'Typescript', 'Tailwind', 'NodeJs', 'Postgresql'],
     },
     {
-      nom: 'GitHub recherche',
+      nom: 'GitHub search',
       url: 'https://dev-flo-github-recherche.netlify.app/',
       image: './images/GitHub.png',
-      description: 'Application de recherche de repos sur GitHub',
+      description: 'Repo finder app on GitHub',
       languages: ['React', 'Typescript', 'Tailwind'],
     },
   ],

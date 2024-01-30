@@ -4,7 +4,8 @@ export default {
       nom: "Immo'pros",
       url: 'https://immopros-app.com/',
       image: "./images/Immo'pros.png",
-      description: 'Application de prospection immobilière',
+      description:
+        'Application de prospection immobilière (Pour se connecter Identifiant: Mdp: guest@guest.com Guest@2024)',
       languages: ['React', 'Typescript', 'Tailwind', 'NodeJs', 'Postgresql'],
     },
     {

@@ -1,7 +1,6 @@
 @use '../../../styles/variables' as v;
 .navbar {
   align-items: center;
-  background: linear-gradient(to right, #060606, #0c0745, #0b0459);
   display: flex;
   height: 18rem;
   justify-content: center;
@@ -90,6 +89,7 @@
   }
 
   .navbar--clicked {
+    background: linear-gradient(to right, #060606, #0c0745, #0b0459);
     height: 100vh;
     left: 0;
     position: fixed;

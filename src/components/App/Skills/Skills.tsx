@@ -6,7 +6,7 @@ import './Skills.scss';
 export default function Skills() {
   const [isActive, setIsActive] = useState(false);
 
-  const skillRef = useRef<HTMLUListElement | null>(null);
+  const skillRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (skillRef.current == null) {
@@ -25,99 +25,70 @@ export default function Skills() {
   }, [isActive]);
 
   const itemsFront = skills.techno.techno_front.map((item) => (
-    <ul key={item.nom} className="flex flex-col gap-2 mt-4" ref={skillRef}>
+    <ul key={item.nom} className="skills-list">
       <span className="">
-        <li
-          className={
-            isActive
-              ? 'flex items-center gap-2 text-lg skill-bg-active'
-              : 'flex items-center gap-2 text-lg skill-bg'
-          }
-        >
+        <li className="skill-items">
           <span>
-            <img
-              src={item.url}
-              alt="logo"
-              width={25}
-              height={25}
-              className="skill-logo"
-            />
+            <img src={item.url} alt="logo" className="skill-logo" />
           </span>
-          <span className="font-bold skill-name">{item.nom}</span>
+          <span className="skill-name">{item.nom}</span>
         </li>
       </span>
     </ul>
   ));
 
   const itemsBack = skills.techno.techno_back.map((item) => (
-    <ul key={item.nom} className="flex flex-col gap-2 mt-4" ref={skillRef}>
+    <ul key={item.nom} className="skills-list">
       <span className="">
-        <li
-          className={
-            isActive
-              ? 'flex items-center gap-2 text-lg skill-bg-active'
-              : 'flex items-center gap-2 text-lg skill-bg'
-          }
-        >
+        <li className="skill-items">
           <span>
-            <img
-              src={item.url}
-              alt="logo"
-              width={25}
-              height={25}
-              className="skill-logo"
-            />
+            <img src={item.url} alt="logo" className="skill-logo" />
           </span>
-          <span className="font-bold  skill-name">{item.nom}</span>
+          <span className="skill-name">{item.nom}</span>
         </li>
       </span>
     </ul>
   ));
 
   const itemsOther = skills.techno.other.map((item) => (
-    <ul key={item.nom} className="flex flex-col gap-2 mt-4" ref={skillRef}>
+    <ul key={item.nom} className="skills-list">
       <span className="">
-        <li
-          className={
-            isActive
-              ? 'flex items-center gap-2 text-lg skill-bg-active'
-              : 'flex items-center gap-2 text-lg skill-bg'
-          }
-        >
+        <li className="skill-items">
           <span>
-            <img
-              src={item.url}
-              alt="logo"
-              width={25}
-              height={25}
-              className="skill-logo"
-            />
+            <img src={item.url} alt="logo" className="skill-logo" />
           </span>
-          <span className="font-bold skill-name">{item.nom}</span>
+          <span className="skill-name">{item.nom}</span>
         </li>
       </span>
     </ul>
   ));
 
   return (
-    <div className="w-full skills">
-      <h2
-        id="skills"
-        className="text-primary-50 mb-8 sm:mb-20 text-4xl text-center font-extrabold"
+    <div id="skills" className="skills">
+      <h2 className="skills-title text-primary-50">Skills</h2>
+      <div
+        className={
+          isActive
+            ? 'skills-conteneur skills-conteneur--active'
+            : 'skills-conteneur'
+        }
+        ref={skillRef}
       >
-        Skills
-      </h2>
-      <div className="flex justify-between">
-        <div>
-          <h3 className="text-2xl font-bold text-primary-50">Front-end</h3>
+        <div className="skill-conteneur">
+          <h3 className="skills-subtitle text-primary-50">Front-end</h3>
           {itemsFront}
         </div>
-        <div>
-          <h3 className="text-2xl font-bold text-primary-50">Back-end</h3>
+        <div className="skill-conteneur">
+          <h3 className="skills-subtitle text-primary-50">Back-end</h3>
           {itemsBack}
         </div>
-        <div>
-          <h3 className="text-2xl font-bold text-primary-50">Other</h3>
+        <div className="skill-conteneur">
+          <h3
+            className="skills-subtitle
+           text-primary-50"
+          >
+            Other
+          </h3>
           {itemsOther}
         </div>
       </div>

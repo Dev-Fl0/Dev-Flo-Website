@@ -2,12 +2,5 @@
 @use 'variables' as v;
 
 html {
-  font-size: 125%;
-}
-
-body {
-  margin: 0;
-  font-size: v.$gutter;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
 }

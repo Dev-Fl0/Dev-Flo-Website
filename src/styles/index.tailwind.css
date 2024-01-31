@@ -39,13 +39,13 @@
     @apply outline-accent-300;
   }
   h1 {
-    @apply text-2xl font-semibold text-center font-poppins md:text-3xl text-primary-200;
+    @apply font-poppins  text-primary-200;
   }
   h2 {
-    @apply text-xl font-semibold font-poppins md:text-2xl;
+    @apply font-poppins;
   }
   h3 {
-    @apply text-lg font-semibold font-poppins md:text-xl;
+    @apply font-poppins;
   }
   em {
     @apply italic;

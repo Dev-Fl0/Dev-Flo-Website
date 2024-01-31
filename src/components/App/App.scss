@@ -1,5 +1,22 @@
 @use '../../styles/variables' as v;
 
 .App {
-	overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18rem;
+  justify-content: space-around;
+  padding: 0 5rem;
+  margin: auto;
+  overflow-y: auto;
+  position: relative;
+
+  h2 {
+    line-height: 2.5rem /* 40px */;
+    font-weight: bold;
+  }
+
+  h3 {
+    line-height: 2.5rem;
+    font-weight: bold;
+  }
 }

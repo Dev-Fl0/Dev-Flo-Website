@@ -1,11 +1,132 @@
+@use '../../../styles/variables' as v;
 .navbar {
-  // padding: 1rem;
-  &-image {
-    
-  }
-  &-list {
-    &__item{
+  align-items: center;
+  background: linear-gradient(to right, #060606, #0c0745, #0b0459);
+  display: flex;
+  height: 18rem;
+  justify-content: center;
+  padding: 6rem 10rem 10rem 2rem;
 
+  &-image {
+    height: 4rem;
+    margin-right: auto;
+    width: 4rem;
+  }
+
+  &-button {
+    display: none;
+  }
+
+  &-list {
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 10rem;
+
+    &__item {
+      border-radius: 15%;
+      padding: 0.2rem;
+      transition: box-shadow 0.3s;
+    }
+
+    &__item:hover {
+      box-shadow: 0 0 13px rgb(88, 79, 166);
+    }
+  }
+}
+
+.arrow-logo {
+  background: #1b2e98;
+  border-radius: 25%;
+  bottom: 25px;
+  height: 5rem;
+  margin: auto;
+  padding: 1rem;
+  position: fixed;
+  right: 25px;
+  width: 5rem;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    &-button {
+      display: block;
+      height: 6rem;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      width: 10rem;
+
+      &__logo {
+        background: #1b2e98;
+        border-radius: 25%;
+        height: 5rem;
+        margin: auto;
+        padding: 1rem;
+        width: 5rem;
+      }
+    }
+
+    &-list {
+      display: inline;
+      padding: 1rem;
+      position: absolute;
+      right: 0;
+      top: 150px;
+
+      &__item {
+        display: none;
+        opacity: 0;
+
+        &-link {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .navbar--clicked {
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 1;
+
+    .navbar-image {
+      position: absolute;
+      top: 50px;
+      left: 70px;
+      height: 4rem;
+      margin-right: auto;
+      width: 4rem;
+    }
+
+    .navbar-list {
+      align-items: flex-end;
+      background: linear-gradient(to right, #060606, #0c0745, #0b0459);
+      border-top: 1px solid #f2fafd;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100vh;
+      width: 100vw;
+      transition: all 0.5s allow-discrete;
+    }
+
+    .navbar-list__item {
+      opacity: 1;
+      display: block;
+      padding: 1rem 0;
+      transition: all 0.5s allow-discrete;
+
+      &-link {
+        font-size: 2rem;
+      }
     }
   }
 }

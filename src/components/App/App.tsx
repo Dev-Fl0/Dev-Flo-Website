@@ -13,7 +13,7 @@ function App() {
   // const [scrollTop, setScrollTop] = useState(0);
 
   return (
-    <div className="App  m-auto relative flex flex-col justify-around gap-72 px-16 ">
+    <div className="App">
       <Navbar />
       <Header />
       <Skills />

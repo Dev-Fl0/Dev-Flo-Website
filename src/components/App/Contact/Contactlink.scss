@@ -1,0 +1,21 @@
+@use '../../../styles/variables' as v;
+
+.contact-content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  padding: 2rem 0;
+
+  &__link {
+    align-items: center;
+    border-radius: 1rem;
+    display: inline-flex;
+    font-size: 2rem;
+    height: 2.30rem;
+    justify-content: center;
+    line-height: 1.25rem;
+    padding: 2rem 1.75rem;
+  }
+}

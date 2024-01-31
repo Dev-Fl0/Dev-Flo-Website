@@ -1,0 +1,12 @@
+@use '../../../styles/variables' as v;
+
+.footer {
+  width: 100%;
+  padding-bottom: 1.5rem;
+  &-description {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+}

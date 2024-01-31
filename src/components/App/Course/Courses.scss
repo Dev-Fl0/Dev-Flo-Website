@@ -1,0 +1,42 @@
+@use '../../../styles/variables' as v;
+
+.course {
+  width: 100%;
+
+  &-title {
+    font-size: v.$h2-size-ls;
+    margin-bottom: 10rem;
+    text-align: center;
+    height: 100%;
+  }
+
+  .vertical-timeline-element--work:hover {
+      // box-shadow: 0 0 13px rgb(88, 79, 166);
+    }
+
+  .timeline-title {
+     font-size: 2rem;
+  }
+  .timeline-subtitle {
+     font-size: 1.5rem;
+  }
+  .timeline-description {
+     font-size: 1.5rem;
+  }
+}
+
+// &-subtitle {
+//   font-size: v.$h3-size-ls;
+//   margin-bottom: 3rem;
+//   transform: translateX(-100px);
+//   opacity: 0;
+//   transition: transform 1s ease-out, opacity 0.3s ease-out;
+// }
+
+@media (max-width: 450px) {
+  .course {
+    &title {
+      font-size: 4rem;
+    }
+  }
+}

@@ -1,7 +1,9 @@
+import './Footer.scss';
+
 export default function Footer() {
   return (
-    <div className="w-full pb-6">
-      <p className="text-primary-50 mb-8  text-sm text-center">
+    <div className="footer">
+      <p className="footer-description text-primary-50">
         ©Copyright 2024 - Wauthier Florian
       </p>
     </div>

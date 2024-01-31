@@ -1,0 +1,12 @@
+@use '../../../styles/variables' as v;
+
+.contact {
+  width: 100%;
+  text-align: center;
+
+  &-title {
+    font-size: v.$h2-size-ls;
+    margin-bottom: 10rem;
+  }
+
+}

@@ -1,15 +1,10 @@
-import React from 'react';
+import './Contact.scss';
 import ContactLink from './ContactLink';
 
 export default function Contact() {
   return (
-    <div className="w-full course">
-      <h2
-        id="contact"
-        className="text-primary-50 mb-8 sm:mb-20 text-4xl text-center font-extrabold"
-      >
-        Contact
-      </h2>
+    <div className="contact" id="contact">
+      <h2 className="contact-title text-primary-50">Contact</h2>
       <ContactLink />
     </div>
   );
